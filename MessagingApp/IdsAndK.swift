@@ -12,7 +12,6 @@ struct IdsAndK {
     static let appName = "MessagingApp"
     static let registerSegue = "RegisterToMessaging"
     static let loginSegue = "LoginToMessaging"
-    static let cellIdentifier = "ReusableCell"
     static let msgCellNibId = "MessageCellNibName"
     static let msgCellNibName = "TableViewCell"
 }

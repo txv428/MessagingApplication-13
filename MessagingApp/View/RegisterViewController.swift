@@ -24,7 +24,7 @@ class RegisterViewController: UIViewController {
                 // if authentication is not done
                 if let err = error {
                     let alert = UIAlertController(title: "Invalid Registration", message: err.localizedDescription, preferredStyle: .alert)
-                    alert.addAction(UIAlertAction(title: "Cancel", style: .default, handler: { (_) in
+                    alert.addAction(UIAlertAction(title: "OK", style: .default, handler: { (_) in
                         print(err.localizedDescription)
                     }))
                     self.present(alert, animated: true, completion: nil)
