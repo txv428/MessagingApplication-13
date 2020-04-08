@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16086"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="MessageCellNibName" rowHeight="60" id="KGk-i7-Jjw" customClass="TableViewCell" customModule="MessagingApp" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="519" height="60"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="519" height="60"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <stackView opaque="NO" contentMode="scaleToFill" alignment="top" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="xa5-IX-b4E">
+                        <rect key="frame" x="5" y="10" width="509" height="40"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5r2-MH-PeY">
+                                <rect key="frame" x="0.0" y="0.0" width="459" height="40"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="h1G-Mp-cRK">
+                                        <rect key="frame" x="10" y="10" width="439" height="20"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" red="0.35686274509803922" green="0.2196078431372549" blue="0.13725490196078433" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="h1G-Mp-cRK" secondAttribute="trailing" constant="10" id="HmA-Cn-AcZ"/>
+                                    <constraint firstItem="h1G-Mp-cRK" firstAttribute="top" secondItem="5r2-MH-PeY" secondAttribute="top" constant="10" id="Mjj-La-b4I"/>
+                                    <constraint firstAttribute="bottom" secondItem="h1G-Mp-cRK" secondAttribute="bottom" constant="10" id="gwN-f1-b8i"/>
+                                    <constraint firstItem="h1G-Mp-cRK" firstAttribute="leading" secondItem="5r2-MH-PeY" secondAttribute="leading" constant="10" id="rCG-qL-6cd"/>
+                                </constraints>
+                            </view>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ME" translatesAutoresizingMaskIntoConstraints="NO" id="r7Z-el-fFk">
+                                <rect key="frame" x="469" y="0.0" width="40" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="40" id="gu1-95-ncn"/>
+                                    <constraint firstAttribute="height" constant="40" id="vge-iu-rB0"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                    </stackView>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="xa5-IX-b4E" secondAttribute="bottom" constant="10" id="SL2-y7-Nk7"/>
+                    <constraint firstItem="xa5-IX-b4E" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="5" id="nFY-vo-7vH"/>
+                    <constraint firstAttribute="trailing" secondItem="xa5-IX-b4E" secondAttribute="trailing" constant="5" id="nPE-vs-Z0s"/>
+                    <constraint firstItem="xa5-IX-b4E" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="txI-if-5F9"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="messageCellView" destination="5r2-MH-PeY" id="grj-LV-MB0"/>
+                <outlet property="messageImage" destination="r7Z-el-fFk" id="jeq-rg-R51"/>
+                <outlet property="messageLabel" destination="h1G-Mp-cRK" id="bNK-os-fQ6"/>
+            </connections>
+            <point key="canvasLocation" x="-71.739130434782609" y="329.46428571428572"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="ME" width="500" height="500"/>
+    </resources>
+</document>
