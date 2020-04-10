@@ -19,6 +19,6 @@
     Do :  pod install
   
 
-  * So, that all the pods gets installed.
+  * All the pods gets installed.
   * Click the *projectName*.xcworkspace, it opens the project in xcode.
   * Use any simulator and run the App.
